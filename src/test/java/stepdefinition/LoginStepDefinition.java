@@ -1,18 +1,16 @@
 package stepdefinition;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import org.openqa.selenium.*;
 
 import io.cucumber.java.en.*;
+import pageobjects.LoginPage;
 
 public class LoginStepDefinition {
-
+	
+	LoginPage lp = new LoginPage();
 	
 	@Given("User enters the URL")
 	public void user_enters_the_url() {
-		WebDriver driver= new ChromeDriver();		
-		driver.get("https://www.saucedemo.com/");
+		System.out.println("Login page");
 	}
 
 	@Then("User lands on login page of saucelabs")
@@ -22,20 +20,23 @@ public class LoginStepDefinition {
 	}
 
 	@When("User Enters username {string}")
-	public void user_enters_username(String string) {
+	public void user_enters_username(String string) throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
+		lp.enterUN(string);
 		System.out.println("Username");
 	}
 
 	@When("User Enters password {string}")
-	public void user_enters_password(String string) {
+	public void user_enters_password(String string) throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
+		lp.enterPW(string);
 		System.out.println("Password");
 	}
 
 	@When("User clicks on Login button")
-	public void user_clicks_on_login_button() {
+	public void user_clicks_on_login_button() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
+		lp.clickLoginBtn();
 		System.out.println("Login Button");
 	}
 

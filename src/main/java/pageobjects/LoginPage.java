@@ -1,13 +1,17 @@
 package pageobjects;
 
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import utilities.Utilities;
 
 import org.openqa.selenium.*;
 
-public class HomePage extends Utilities{
+public class LoginPage extends Utilities{
 
-	
+	public LoginPage() {
+		PageFactory.initElements(driver, this);
+	}
 
 	@FindBy(id = "user-name")
 	private WebElement UserName;
@@ -22,12 +26,12 @@ public class HomePage extends Utilities{
 	// WebElement ele = driver.findElement(UN);
 
 	public void enterUN(String UN) throws InterruptedException {
-		flashing(LoginButton);
+		flashing(UserName);
 		sendKeys(UserName,UN);
 	}
 
 	public void enterPW(String PW) throws InterruptedException {
-		flashing(LoginButton);
+		flashing(PassWord);
 		sendKeys(PassWord,PW);
 	}
 

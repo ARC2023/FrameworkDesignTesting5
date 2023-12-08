@@ -12,7 +12,7 @@ public class DriverManager {
 
 	public static WebDriver driver ;
 
-	public WebDriver launchBrowser(String browser, String URL) {	
+	public static WebDriver launchBrowser(String browser, String URL) {	
 		
 		System.out.println("Browser value is: " + browser);
 

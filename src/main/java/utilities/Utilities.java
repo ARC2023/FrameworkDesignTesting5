@@ -32,8 +32,8 @@ public class Utilities extends DriverManager{
 
 		System.out.println("BackGround Color of Element -->" + backGroundColor);
 
-		for (int i = 0; i < 10; i++) {
-			colorChange(etr,  "rgb(51,51,51)");
+		for (int i = 0; i < 3; i++) {
+			colorChange(etr,  "rgb(261,121,51)");
 			colorChange(etr,  backGroundColor);
 		}
 	}

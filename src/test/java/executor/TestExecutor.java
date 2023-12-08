@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(		
 		features = {"src\\test\\resources\\Ecommerc Product Ordering\\"},
-		glue= {"stepdefinition"},
+		glue= {"stepdefinition","hooks"},
 		plugin= {"pretty"}
 		)
 public class TestExecutor {
