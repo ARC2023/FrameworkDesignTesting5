@@ -8,7 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(		
 		features = {"src\\test\\resources\\Ecommerc Product Ordering\\"},
 		glue= {"stepdefinition","hooks"},
-		plugin= {"pretty"}
+		plugin= {"pretty",
+      "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+}
 		)
 public class TestExecutor {
 

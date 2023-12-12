@@ -1,11 +1,18 @@
 package utilities;
 
+import java.io.File;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
-
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import drivermanager.DriverManager;
+
 
 public class Utilities extends DriverManager{
 	
@@ -128,6 +135,8 @@ public class Utilities extends DriverManager{
 		System.out.println("Scrolled to element");
 	}
 
+	
+	
 	
 	
 	

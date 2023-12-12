@@ -19,24 +19,24 @@ public class LoginPage extends Utilities{
 	@FindBy(id = "password")
 	private WebElement PassWord;
 
-	@FindBy(id = "login-button")
+	@FindBy(id = "login-button1")
 	private WebElement LoginButton;
 
 	// By UN = By.xpath("");
 	// WebElement ele = driver.findElement(UN);
 
 	public void enterUN(String UN) throws InterruptedException {
-		flashing(UserName);
+		//flashing(UserName);
 		sendKeys(UserName,UN);
 	}
 
 	public void enterPW(String PW) throws InterruptedException {
-		flashing(PassWord);
+		//flashing(PassWord);
 		sendKeys(PassWord,PW);
 	}
 
 	public void clickLoginBtn() throws InterruptedException {
-		flashing(LoginButton);
+		//flashing(LoginButton);
 		clickOnElement(LoginButton);
 	}
 }
