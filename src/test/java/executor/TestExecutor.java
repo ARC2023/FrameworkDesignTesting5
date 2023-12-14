@@ -10,7 +10,13 @@ import io.cucumber.junit.CucumberOptions;
 		glue = { "stepdefinition","hooks" }, 
 		plugin = { "pretty", 
 				"rerun:target/failedcases.txt",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }
+				"html:target/cucumber-reports/html",
+				"json:target/cucumber-reports/json/report.json",
+				"junit:target/cucumber-reports/junit/report.xml",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+		
+		monochrome=false,
+		dryRun=false
 				
 		)
 public class TestExecutor {

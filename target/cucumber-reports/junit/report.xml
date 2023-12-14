@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="0.394">
+    <testcase classname="Validate login functionality" name="Verify user is able to login to sauce labs with correct credentials" time="0.104">
+        <system-out><![CDATA[Given User enters the URL...................................................passed
+Then User lands on login page of saucelabs..................................passed
+When User Enters username "standard_user"...................................passed
+And User Enters password "secret_sauce".....................................passed
+And User clicks on Login button.............................................passed
+Then User should land on home page of saucelabs.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate login functionality" name="Verify user is not able to login to sauce labs with incorrect username" time="0.006">
+        <system-out><![CDATA[Given User enters the URL...................................................passed
+Then User lands on login page of saucelabs..................................passed
+When User Enters username "incorrectUn".....................................passed
+And User Enters password "secret_sauce".....................................passed
+And User clicks on Login button.............................................passed
+Then Validate correct error message should come for UN......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate login functionality" name="Verify user is not able to login to sauce labs with incorrect password" time="0.009">
+        <system-out><![CDATA[Given User enters the URL...................................................passed
+Then User lands on login page of saucelabs..................................passed
+When User Enters username "standard_user"...................................passed
+And User Enters password "incorrectpw"......................................passed
+And User clicks on Login button.............................................passed
+Then Validate correct error message should come for PW......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate login functionality" name="Verify user error message when user clicks on submit without entering un or pw" time="0.005">
+        <system-out><![CDATA[Given User enters the URL...................................................passed
+Then User lands on login page of saucelabs..................................passed
+And User clicks on Login button.............................................passed
+Then Validate correct error message should come.............................passed
+When User clicks on close button............................................passed
+Then error message should disappear.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Add to cart" name="Add single item to cart" time="0.014">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User enters the URL...................................................passed
+Then User lands on login page of saucelabs..................................passed
+When User Enters username "standard_user"...................................passed
+And User Enters password "secret_sauce".....................................passed
+And User clicks on Login button.............................................passed
+Then User should land on home page of saucelabs.............................passed
+When user clicks on add to cart.............................................undefined
+Then product is moved to cart...............................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Add to cart" name="Add multiple item to cart" time="0.006">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User enters the URL...................................................passed
+Then User lands on login page of saucelabs..................................passed
+When User Enters username "standard_user"...................................passed
+And User Enters password "secret_sauce".....................................passed
+And User clicks on Login button.............................................passed
+Then User should land on home page of saucelabs.............................passed
+When user clicks on add to cart.............................................undefined
+Then product is moved to cart...............................................skipped
+When user clicks on add to cart for another product.........................skipped
+Then multiple product is moved to cart......................................skipped
+]]></failure>
+    </testcase>
+</testsuite>
