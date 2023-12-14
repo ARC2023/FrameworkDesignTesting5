@@ -64,8 +64,9 @@ public class LoginStepDefinition extends ScreenShot {
 	}
 
 	@Then("Validate correct error message should come for PW")
-	public void validate_correct_error_message_should_come_for_pw() {
+	public void validate_correct_error_message_should_come_for_pw() throws Exception {
 		// Write code here that turns the phrase above into concrete actions
+		  //throw new Exception("Rerun Functionality");
 
 	}
 
@@ -82,8 +83,8 @@ public class LoginStepDefinition extends ScreenShot {
 	}
 
 	@Then("error message should disappear")
-	public void error_message_should_disappear() {
+	public void error_message_should_disappear() throws Exception {
 		// Write code here that turns the phrase above into concrete actions
-
+  //throw new Exception("Rerun Functionality");
 	}
 }
