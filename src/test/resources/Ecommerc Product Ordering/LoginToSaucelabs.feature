@@ -1,9 +1,11 @@
+@AllLogin
 Feature: Validate login functionality
 
 Background: 
 	Given User enters the URL 
   Then User lands on login page of saucelabs
 
+	@regression @sanity
   Scenario: Verify user is able to login to sauce labs with correct credentials
   
   When User Enters username "standard_user"
@@ -11,7 +13,7 @@ Background:
   And User clicks on Login button
   Then User should land on home page of saucelabs 
    
-    
+    @regression
   Scenario: Verify user is not able to login to sauce labs with incorrect username 
   
   When User Enters username "incorrectUn"    
@@ -19,7 +21,7 @@ Background:
   And User clicks on Login button 
   Then Validate correct error message should come for UN 
    
-   
+   @sanity
   Scenario: Verify user is not able to login to sauce labs with incorrect password 
   
   When User Enters username "standard_user" 
@@ -27,7 +29,7 @@ Background:
   And User clicks on Login button 
   Then Validate correct error message should come for PW 
    
-   
+   @smoke @Integration
   Scenario: Verify user error message when user clicks on submit without entering un or pw 
   
   And User clicks on Login button 

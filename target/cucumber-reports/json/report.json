@@ -1,581 +1,13 @@
 [
   {
-    "line": 1,
-    "elements": [
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4219200,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User enters the URL",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_enters_the_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 999700,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User lands on login page of saucelabs",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_lands_on_login_page_of_saucelabs()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-12-14T02:45:05.552Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4306300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.setUpConfigFile(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 7,
-        "name": "Verify user is able to login to sauce labs with correct credentials",
-        "description": "",
-        "id": "validate-login-functionality;verify-user-is-able-to-login-to-sauce-labs-with-correct-credentials",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.dismantleDriver(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User Enters username \"standard_user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"standard_user\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User Enters password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"secret_sauce\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 503200,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User clicks on Login button",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User should land on home page of saucelabs",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_should_land_on_home_page_of_saucelabs()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User enters the URL",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_enters_the_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User lands on login page of saucelabs",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_lands_on_login_page_of_saucelabs()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-12-14T02:45:05.664Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.setUpConfigFile(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Verify user is not able to login to sauce labs with incorrect username",
-        "description": "",
-        "id": "validate-login-functionality;verify-user-is-not-able-to-login-to-sauce-labs-with-incorrect-username",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.dismantleDriver(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User Enters username \"incorrectUn\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"incorrectUn\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1172000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User Enters password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"secret_sauce\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User clicks on Login button",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Validate correct error message should come for UN",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.validate_correct_error_message_should_come_for_un()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User enters the URL",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_enters_the_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1003900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User lands on login page of saucelabs",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_lands_on_login_page_of_saucelabs()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-12-14T02:45:05.673Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.setUpConfigFile(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "Verify user is not able to login to sauce labs with incorrect password",
-        "description": "",
-        "id": "validate-login-functionality;verify-user-is-not-able-to-login-to-sauce-labs-with-incorrect-password",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.dismantleDriver(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User Enters username \"standard_user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"standard_user\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User Enters password \"incorrectpw\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"incorrectpw\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User clicks on Login button",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Validate correct error message should come for PW",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.validate_correct_error_message_should_come_for_pw()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User enters the URL",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_enters_the_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User lands on login page of saucelabs",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_lands_on_login_page_of_saucelabs()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-12-14T02:45:05.693Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1441700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.setUpConfigFile(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 31,
-        "name": "Verify user error message when user clicks on submit without entering un or pw",
-        "description": "",
-        "id": "validate-login-functionality;verify-user-error-message-when-user-clicks-on-submit-without-entering-un-or-pw",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.dismantleDriver(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1076500,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "User clicks on Login button",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "Validate correct error message should come",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.validate_correct_error_message_should_come()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "User clicks on close button",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_clicks_on_close_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1413300,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "error message should disappear",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.error_message_should_disappear()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Validate login functionality",
-    "description": "",
-    "id": "validate-login-functionality",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/Ecommerc%20Product%20Ordering/LoginToSaucelabs.feature",
-    "tags": []
-  },
-  {
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User enters the URL",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_enters_the_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1003700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User lands on login page of saucelabs",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_lands_on_login_page_of_saucelabs()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User Enters username \"standard_user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"standard_user\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User Enters password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"secret_sauce\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks on Login button",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User should land on home page of saucelabs",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_should_land_on_home_page_of_saucelabs()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-12-14T02:45:05.737Z",
+        "start_timestamp": "2023-12-16T02:57:17.668Z",
         "before": [
           {
             "result": {
+              "duration": 3149111500,
               "status": "passed"
             },
             "match": {
@@ -584,12 +16,13 @@
           }
         ],
         "line": 12,
-        "name": "Add single item to cart",
+        "name": "Data Driven Testing in scenario outline",
         "description": "",
-        "id": "add-to-cart;add-single-item-to-cart",
+        "id": "data-driven-testing;data-driven-testing-in-scenario-outline;;2",
         "after": [
           {
             "result": {
+              "duration": 183439300,
               "status": "passed"
             },
             "match": {
@@ -598,71 +31,132 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "user clicks on add to cart",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "product is moved to cart",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
+              "duration": 3002000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User enters the URL",
+            "line": 6,
+            "name": "Name of employee \"Bharti\"",
             "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_enters_the_url()"
+              "arguments": [
+                {
+                  "val": "\"Bharti\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefinition.DataDrivenTesting.name_of_employee(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
+              "duration": 503000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User lands on login page of saucelabs",
+            "line": 7,
+            "name": "salary of employee \"90000\" in step",
             "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_lands_on_login_page_of_saucelabs()"
+              "arguments": [
+                {
+                  "val": "\"90000\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinition.DataDrivenTesting.salary_of_employee_in_step(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1630900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "company of employee \"IBM\" in step",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IBM\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinition.DataDrivenTesting.company_of_employee_in_step(java.lang.String)"
             },
             "keyword": "Then "
-          },
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ddt"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-12-16T02:57:21.100Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2068323300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.FrameworkHook.setUpConfigFile(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Data Driven Testing in scenario outline",
+        "description": "",
+        "id": "data-driven-testing;data-driven-testing-in-scenario-outline;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 125660400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.FrameworkHook.dismantleDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
           {
             "result": {
               "status": "passed"
             },
-            "line": 7,
-            "name": "User Enters username \"standard_user\"",
+            "line": 6,
+            "name": "Name of employee \"Anjali\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"standard_user\"",
-                  "offset": 21
+                  "val": "\"Anjali\"",
+                  "offset": 17
                 }
               ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_username(java.lang.String)"
+              "location": "stepdefinition.DataDrivenTesting.name_of_employee(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1169000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "salary of employee \"99000\" in step",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"99000\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinition.DataDrivenTesting.salary_of_employee_in_step(java.lang.String)"
             },
             "keyword": "When "
           },
@@ -671,47 +165,31 @@
               "status": "passed"
             },
             "line": 8,
-            "name": "User Enters password \"secret_sauce\"",
+            "name": "company of employee \"Wipro\" in step",
             "match": {
               "arguments": [
                 {
-                  "val": "\"secret_sauce\"",
-                  "offset": 21
+                  "val": "\"Wipro\"",
+                  "offset": 20
                 }
               ],
-              "location": "stepdefinition.LoginStepDefinition.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks on Login button",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User should land on home page of saucelabs",
-            "match": {
-              "location": "stepdefinition.LoginStepDefinition.user_should_land_on_home_page_of_saucelabs()"
+              "location": "stepdefinition.DataDrivenTesting.company_of_employee_in_step(java.lang.String)"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ddt"
           }
         ]
       },
       {
-        "start_timestamp": "2023-12-14T02:45:05.770Z",
+        "start_timestamp": "2023-12-16T02:57:23.305Z",
         "before": [
           {
             "result": {
+              "duration": 2653043200,
               "status": "passed"
             },
             "match": {
@@ -719,13 +197,14 @@
             }
           }
         ],
-        "line": 19,
-        "name": "Add multiple item to cart",
+        "line": 14,
+        "name": "Data Driven Testing in scenario outline",
         "description": "",
-        "id": "add-to-cart;add-multiple-item-to-cart",
+        "id": "data-driven-testing;data-driven-testing-in-scenario-outline;;4",
         "after": [
           {
             "result": {
+              "duration": 145493300,
               "status": "passed"
             },
             "match": {
@@ -734,53 +213,73 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "status": "passed"
             },
-            "line": 21,
-            "name": "user clicks on add to cart",
-            "match": {},
+            "line": 6,
+            "name": "Name of employee \"Tushar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tushar\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefinition.DataDrivenTesting.name_of_employee(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "salary of employee \"96000\" in step",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"96000\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinition.DataDrivenTesting.salary_of_employee_in_step(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1064000,
+              "status": "passed"
             },
-            "line": 22,
-            "name": "product is moved to cart",
-            "match": {},
+            "line": 8,
+            "name": "company of employee \"LTI\" in step",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LTI\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinition.DataDrivenTesting.company_of_employee_in_step(java.lang.String)"
+            },
             "keyword": "Then "
-          },
+          }
+        ],
+        "tags": [
           {
-            "result": {
-              "duration": 1472100,
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "user clicks on add to cart for another product",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 24,
-            "name": "multiple product is moved to cart",
-            "match": {},
-            "keyword": "Then "
+            "name": "@ddt"
           }
         ]
       }
     ],
-    "name": "Add to cart",
+    "name": "Data Driven Testing",
     "description": "",
-    "id": "add-to-cart",
+    "id": "data-driven-testing",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Ecommerc%20Product%20Ordering/addToCart.feature",
+    "uri": "file:src/test/resources/Ecommerc%20Product%20Ordering/datadriventesting.feature",
     "tags": []
   }
 ]

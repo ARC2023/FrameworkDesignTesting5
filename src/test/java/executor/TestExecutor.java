@@ -16,7 +16,8 @@ import io.cucumber.junit.CucumberOptions;
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		
 		monochrome=false,
-		dryRun=false
+		dryRun=false,
+		tags="@ddt"
 				
 		)
 public class TestExecutor {

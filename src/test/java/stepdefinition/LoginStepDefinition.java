@@ -13,6 +13,7 @@ public class LoginStepDefinition extends ScreenShot {
 	@Given("User enters the URL")
 	public void user_enters_the_url() {
 		System.out.println("Login page in Background");
+		
 	}
 
 	@Then("User lands on login page of saucelabs")

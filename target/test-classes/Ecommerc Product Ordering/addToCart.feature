@@ -1,4 +1,4 @@
-
+@AllAddToCart
 Feature: Add to cart
 
 Background: 
@@ -9,13 +9,14 @@ Background:
   And User clicks on Login button
   Then User should land on home page of saucelabs 
   
+  @sanity
   Scenario: Add single item to cart
     
     When user clicks on add to cart
     Then product is moved to cart
     
 
-  
+  @regression
  Scenario: Add multiple item to cart
     
    When user clicks on add to cart
