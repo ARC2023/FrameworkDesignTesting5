@@ -17,7 +17,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		monochrome=false,
 		dryRun=false,
-		tags="@ddt"
+		tags="@DataTablesMap"
 				
 		)
 public class TestExecutor {

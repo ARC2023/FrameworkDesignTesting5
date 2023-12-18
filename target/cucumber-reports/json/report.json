@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-12-16T02:57:17.668Z",
+        "start_timestamp": "2023-12-18T02:38:54.924Z",
         "before": [
           {
             "result": {
-              "duration": 3149111500,
+              "duration": 4428848600,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "Data Driven Testing in scenario outline",
+        "line": 24,
+        "name": "Data Table as Maps",
         "description": "",
-        "id": "data-driven-testing;data-driven-testing-in-scenario-outline;;2",
+        "id": "data-tables-in-cucumbers-using-list-and-maps;data-table-as-maps",
         "after": [
           {
             "result": {
-              "duration": 183439300,
+              "duration": 285619900,
               "status": "passed"
             },
             "match": {
@@ -31,75 +31,99 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3002000,
+              "duration": 3314700,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Name of employee \"Bharti\"",
+            "line": 25,
+            "name": "I want to show data table as map",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Bharti\"",
-                  "offset": 17
-                }
-              ],
-              "location": "stepdefinition.DataDrivenTesting.name_of_employee(java.lang.String)"
+              "location": "stepdefinition.DataTables.i_want_to_show_data_table_as_map()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 503000,
+              "duration": 6393500,
               "status": "passed"
             },
-            "line": 7,
-            "name": "salary of employee \"90000\" in step",
+            "line": 26,
+            "name": "I recevie below mentioned data in table as map",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"90000\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepdefinition.DataDrivenTesting.salary_of_employee_in_step(java.lang.String)"
+              "location": "stepdefinition.DataTables.i_recevie_below_mentioned_data_in_table_as_map(io.cucumber.datatable.DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Email",
+                  "City",
+                  "Number"
+                ]
+              },
+              {
+                "cells": [
+                  "Amruta",
+                  "Amruta@gmail.com",
+                  "Nagpur",
+                  "987456"
+                ]
+              },
+              {
+                "cells": [
+                  "Bhagyashree",
+                  "Bhagyashree@gmail.com",
+                  "Pune",
+                  "654789"
+                ]
+              },
+              {
+                "cells": [
+                  "Priya",
+                  "Priya@gmail.com",
+                  "Mumbai",
+                  "123654"
+                ]
+              },
+              {
+                "cells": [
+                  "Nikhil",
+                  "Nikhil@gmail.com",
+                  "Banglore",
+                  "456258"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1630900,
+              "duration": 1004500,
               "status": "passed"
             },
-            "line": 8,
-            "name": "company of employee \"IBM\" in step",
+            "line": 33,
+            "name": "my list is iterated successfully",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"IBM\"",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefinition.DataDrivenTesting.company_of_employee_in_step(java.lang.String)"
+              "location": "stepdefinition.DataTables.my_list_is_iterated_successfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ddt"
+            "name": "@DataTablesMap"
           }
         ]
       },
       {
-        "start_timestamp": "2023-12-16T02:57:21.100Z",
+        "start_timestamp": "2023-12-18T02:38:59.833Z",
         "before": [
           {
             "result": {
-              "duration": 2068323300,
+              "duration": 2511527900,
               "status": "passed"
             },
             "match": {
@@ -107,14 +131,14 @@
             }
           }
         ],
-        "line": 13,
-        "name": "Data Driven Testing in scenario outline",
+        "line": 36,
+        "name": "Data Table as Maps only",
         "description": "",
-        "id": "data-driven-testing;data-driven-testing-in-scenario-outline;;3",
+        "id": "data-tables-in-cucumbers-using-list-and-maps;data-table-as-maps-only",
         "after": [
           {
             "result": {
-              "duration": 125660400,
+              "duration": 199461000,
               "status": "passed"
             },
             "match": {
@@ -123,163 +147,84 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 6,
-            "name": "Name of employee \"Anjali\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Anjali\"",
-                  "offset": 17
-                }
-              ],
-              "location": "stepdefinition.DataDrivenTesting.name_of_employee(java.lang.String)"
-            },
+            "line": 37,
+            "name": "I want to show data table as map only",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1169000,
-              "status": "passed"
+              "duration": 2614800,
+              "status": "skipped"
             },
-            "line": 7,
-            "name": "salary of employee \"99000\" in step",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"99000\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepdefinition.DataDrivenTesting.salary_of_employee_in_step(java.lang.String)"
-            },
+            "line": 38,
+            "name": "I recevie below mentioned data in table as map only",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Email"
+                ]
+              },
+              {
+                "cells": [
+                  "Amruta",
+                  "Amruta@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Bhagyashree",
+                  "Bhagyashree@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Priya",
+                  "Priya@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Nikhil",
+                  "Nikhil@gmail.com"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "status": "passed"
+              "duration": 1099200,
+              "status": "skipped"
             },
-            "line": 8,
-            "name": "company of employee \"Wipro\" in step",
+            "line": 45,
+            "name": "my list is iterated successfully",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Wipro\"",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefinition.DataDrivenTesting.company_of_employee_in_step(java.lang.String)"
+              "location": "stepdefinition.DataTables.my_list_is_iterated_successfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ddt"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-12-16T02:57:23.305Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2653043200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.setUpConfigFile(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Data Driven Testing in scenario outline",
-        "description": "",
-        "id": "data-driven-testing;data-driven-testing-in-scenario-outline;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 145493300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.FrameworkHook.dismantleDriver(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Name of employee \"Tushar\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Tushar\"",
-                  "offset": 17
-                }
-              ],
-              "location": "stepdefinition.DataDrivenTesting.name_of_employee(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "salary of employee \"96000\" in step",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"96000\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepdefinition.DataDrivenTesting.salary_of_employee_in_step(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1064000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "company of employee \"LTI\" in step",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"LTI\"",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefinition.DataDrivenTesting.company_of_employee_in_step(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@ddt"
+            "name": "@DataTablesMap"
           }
         ]
       }
     ],
-    "name": "Data Driven Testing",
+    "name": "Data Tables in Cucumbers using list and maps",
     "description": "",
-    "id": "data-driven-testing",
+    "id": "data-tables-in-cucumbers-using-list-and-maps",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Ecommerc%20Product%20Ordering/datadriventesting.feature",
+    "uri": "file:src/test/resources/Ecommerc%20Product%20Ordering/DataTable.feature",
     "tags": []
   }
 ]

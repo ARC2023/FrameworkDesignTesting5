@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="8.605">
-    <testcase classname="Data Driven Testing" name="Data Driven Testing in scenario outline" time="3.422">
-        <system-out><![CDATA[Given Name of employee "Bharti".............................................passed
-When salary of employee "90000" in step.....................................passed
-Then company of employee "IBM" in step......................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.921">
+    <testcase classname="Data Tables in Cucumbers using list and maps" name="Data Table as Maps" time="4.861">
+        <system-out><![CDATA[Given I want to show data table as map......................................passed
+When I recevie below mentioned data in table as map.........................passed
+Then my list is iterated successfully.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Data Driven Testing" name="Data Driven Testing in scenario outline 2" time="2.198">
-        <system-out><![CDATA[Given Name of employee "Anjali".............................................passed
-When salary of employee "99000" in step.....................................passed
-Then company of employee "Wipro" in step....................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Data Driven Testing" name="Data Driven Testing in scenario outline 3" time="2.803">
-        <system-out><![CDATA[Given Name of employee "Tushar".............................................passed
-When salary of employee "96000" in step.....................................passed
-Then company of employee "LTI" in step......................................passed
-]]></system-out>
+    <testcase classname="Data Tables in Cucumbers using list and maps" name="Data Table as Maps only" time="2.728">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I want to show data table as map only.................................undefined
+When I recevie below mentioned data in table as map only....................skipped
+Then my list is iterated successfully.......................................skipped
+]]></failure>
     </testcase>
 </testsuite>
